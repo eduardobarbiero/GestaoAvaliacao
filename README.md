@@ -2,6 +2,7 @@
 Portal de Gestão de Avaliação para candidatos.
 
 Utilizar versão 1.9.3 do Ruby!
+
   Ir até o diretório do projeto
   
     bundle install
@@ -27,6 +28,7 @@ Para envio de email, está configurada a conta:
   senha: gestaoavaliacao
   
 Usuário padrão:
+
   login: teste@teste.com.br
   
   senha: teste
