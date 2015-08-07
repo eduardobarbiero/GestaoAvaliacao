@@ -77,22 +77,24 @@ class CandidatosController < ApplicationController
   private
     def trabalha_candidatos candidato_id
       maiorMedia = []
-      params[:conhecimento].each { |conhecimento|
-        if !conhecimento.blank?
-          @emails = Email.pesquisa_candidatos_emails(conhecimento[0].to_i, conhecimento[1].to_i)
-          if !@emails.blank?
-            maiorMedia.push conhecimento[0].to_i
+      if !params[:conhecimento].nil?
+        params[:conhecimento].each { |conhecimento|
+          if !conhecimento.blank?
+            @emails = Email.pesquisa_candidatos_emails(conhecimento[0].to_i, conhecimento[1].to_i)
+            if !@emails.blank?
+              maiorMedia.push conhecimento[0].to_i
+            end
           end
+        }
+        @media = Email.nao_generico
+        enviado = 0
+        @media.each { |email|
+          enviado = enviado + media_conhecimento(email.id, maiorMedia, email.corpo, email.titulo, candidato_id).to_i
+        }
+        if enviado == 0
+          @emailGenerico = Email.find_by_generico(1)
+          notificar(candidato_params[:email].to_s, @emailGenerico.titulo, @emailGenerico.corpo)
         end
-      }
-      @media = Email.nao_generico
-      enviado = 0
-      @media.each { |email|
-        enviado = enviado + media_conhecimento(email.id, maiorMedia, email.corpo, email.titulo, candidato_id).to_i
-      }
-      if enviado == 0
-        @emailGenerico = Email.find_by_generico(1)
-        notificar(candidato_params[:email].to_s, @emailGenerico.titulo, @emailGenerico.corpo)
       end
     end
 
