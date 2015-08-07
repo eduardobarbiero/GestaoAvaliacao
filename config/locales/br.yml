@@ -1,0 +1,86 @@
+br:
+  devise:
+    confirmations:
+      confirmed: "Sua conta foi confirmada com sucesso."
+      send_instructions: "Você receberá um e-mail com instruções sobre como confirmar a sua conta em alguns minutos."
+      send_paranoid_instructions: "Se o seu e-mail já existe na nossa base, você receberá um e-mail com as instruções sobre como confirmar a sua conta em alguns minutos..."
+    failure:
+      already_authenticated: "Você já está cadastrado."
+      inactive: "Sua conta ainda não está ativada."
+      invalid: "e-mail ou senha incorreto."
+      locked: "Sua conta está bloqueada."
+      last_attempt: "Você tem mais uma chance antes da sua conta ser bloqueada."
+      not_found_in_database: "e-mail ou senha invalido."
+      timeout: "Sua sessão expirou. Por favor entre novamente para continuar."
+      unauthenticated: "Você precisa fazer login ou registe-se antes de continuar."
+      unconfirmed: "Você precisa confirmar a sua conta para continuar."
+    mailer:
+      confirmation_instructions:
+        subject: "Instruções de confirmação"
+      reset_password_instructions:
+        subject: "Instruções para redefinição de senha"
+      unlock_instructions:
+        subject: "Instruções para desbloqueio"
+    omniauth_callbacks:
+      failure: "Não foi possível autenticar-lo de %{kind} because \"%{reason}\"."
+      success: "Autenticação com sucesso %{kind} conta."
+    passwords:
+      no_token: "Você não pode acessar essa página sem vim de e-mail de redefinição de senha. se você vem de e-mail de redefinição de senha, por favor certifique-se de que você usou a URL completa fornecida."
+      send_instructions: "Você receberá um e-mail com as instruções para redefinição da sua senha em alguns minutos."
+      send_paranoid_instructions: "Se o seu e-mail já existe em nossa base, Você receberá um link para recuperação de senha no seu e-mail em alguns minutos."
+      updated: "Sua senha foi alterada com sucesso. Você agora está cadastrado."
+      updated_not_active: "Sua senha foi alterada com sucesso."
+    registrations:
+      destroyed: "Tchau! Sua conta foi cancelada com sucesso. Esperamos vê-lo em breve."
+      signed_up: "Bem vindo! Seu cadastro foi realizado com sucesso."
+      signed_up_but_inactive: "Seu cadastro foi realizado com sucesso. No entanto, Não foi possível loga-lo porque a sua conta ainda não foi ativada."
+      signed_up_but_locked: "Seu cadastro foi realizado com sucesso. No entanto, Não foi possível loga-lo porque sua conta está bloqueada."
+      signed_up_but_unconfirmed: "Uma menssagem com uma confirmação foi enviada para o seu e-mail. Por favor abra o link para ativar a sua conta."
+      update_needs_confirmation: "Sua conta foi atualizada com sucesso, Mas nós precisamos verificar seu novo endereço de e-mail. Por favor verifique seu e-mail e clique no link para finalizar a confirmação do seu novo e-mail."
+      updated: "Sua conta foi atualizada com sucesso."
+    sessions:
+      signed_in: "Entrada com sucesso."
+      signed_out: "Sua saída foi realizada com sucesso."
+    unlocks:
+      send_instructions: "Você receberá um e-mail com as instruções para desbloquear a sua conta em alguns minutos."
+      send_paranoid_instructions: "Se a sua conta existe, Você receberá um e-mail com as instruções para desbloqueá-la em alguns minutos."
+      unlocked: "Sua conta foi desbloqueada com sucesso. Por favor entre para continuar."
+  errors:
+    messages:
+      already_confirmed: "Já foi confimado, Por favor tente entrar"
+      confirmation_period_expired: "Precisa ser confirmado dentro %{period}, Por favor solicite um novo"
+      expired: "Expirou, Por favor solicite um novo"
+      not_found: "Não encontrado"
+      not_locked: "Não estava bloqueada"
+      not_saved:
+        one: "1 erro proibiu esse %{resource} de ser salvo:"
+        other: "%{count} erros proibiu esse %{resource} de ser salvo:"
+  activerecord:
+    attributes:
+      user:
+        password: "Senha"
+        password_confirmation: "Confirmação de Senha"
+        current_password : "Senha atual"
+        remember_me: "Lembrar?"
+        name: "Nome"
+      link:
+        user: "Usuário"
+        ip: "IP"
+        client: "Cliente"
+  views:
+    pagination:
+      first: "&laquo; Primeira"
+      last: "Última &raquo;"
+      previous: "&lsaquo; Anterior"
+      next: "Proxima &rsaquo;"
+      truncate: "&hellip;"
+
+    helpers:
+      page_entries_info:
+        one_page:
+          display_entries:
+            zero: "Nenhum %{entry_name} encontrado"
+            one: "Exibindo <b>1</b> %{entry_name}"
+            other: "Exibindo <b>todos %{count}</b> %{entry_name}"
+        more_pages:
+          display_entries: "Exibindo %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> de <b>%{total}</b> no total."

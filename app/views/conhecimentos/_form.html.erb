@@ -1,0 +1,10 @@
+<%= form_for(@conhecimento) do |f| %>
+
+  <div class="form-group">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.button "Salvar", class: "btn btn-primary"%>
+  </div>
+<% end %>

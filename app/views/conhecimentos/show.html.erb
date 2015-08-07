@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @conhecimento.nome %>
+</p>
+
+<p>
+  <strong>Minima:</strong>
+  <%= @conhecimento.minima %>
+</p>
+
+<p>
+  <strong>Maxima:</strong>
+  <%= @conhecimento.maxima %>
+</p>
+
+<%= link_to 'Edit', edit_conhecimento_path(@conhecimento) %> |
+<%= link_to 'Back', conhecimentos_path %>

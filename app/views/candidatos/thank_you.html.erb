@@ -1,0 +1,7 @@
+<% if !params[:candidato].blank? %>
+    <div class="container">
+      <div class="row">
+        <legend class="text-center"><%=  (params[:candidato] != '' ? params[:candidato] + ', obrigado' : 'Obrigado') %> por responder o formulário!</legend>
+      </div>
+    </div>
+<% end %>
