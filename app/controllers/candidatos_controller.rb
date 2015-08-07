@@ -93,7 +93,9 @@ class CandidatosController < ApplicationController
         }
         if enviado == 0
           @emailGenerico = Email.find_by_generico(1)
-          notificar(candidato_params[:email].to_s, @emailGenerico.titulo, @emailGenerico.corpo)
+          if !@emailGenerico.nil?
+            notificar(candidato_params[:email].to_s, @emailGenerico.titulo, @emailGenerico.corpo)
+          end
         end
       end
     end
