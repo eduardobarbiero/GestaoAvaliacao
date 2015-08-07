@@ -15,23 +15,23 @@ Utilizar versão 1.9.3 do Ruby!
 	
 Para efetuar uma Avaliação basta acessar:
 
-  http://localhost:3000/avaliacao/
+    http://localhost:3000/avaliacao/
   
 Para acessar diretamente o portal de Gestão acessar:
 
-  http://localhost:3000/
+    http://localhost:3000/
   
 Para envio de email, está configurada a conta:
 
-  login: meustestepedidos@gmail.com  
+    login: meustestepedidos@gmail.com  
   
-  senha: gestaoavaliacao
+    senha: gestaoavaliacao
   
 Usuário padrão:
 
-  login: teste@teste.com.br
+    login: teste@teste.com.br
   
-  senha: teste
+    senha: teste
   
   
   
