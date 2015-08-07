@@ -5,6 +5,8 @@ Utilizar versão 1.9.3 do Ruby!
 
   Ir até o diretório do projeto
   
+    gem install bundler
+    
     bundle install
     
     bundle exec rake db:migrate rails_env=development  
