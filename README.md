@@ -1,7 +1,7 @@
 # Gestão Avaliação
 Portal de Gestão de Avaliação para candidatos.
 
-Instalar/Utilizar versão 1.9.3 do Ruby!
+Instalar/Utilizar versão 1.9.3 do Ruby:
 
     http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.9.3-p551.exe
 
