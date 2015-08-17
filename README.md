@@ -1,10 +1,22 @@
-# GestaoAvaliacao
+# Gestão Avaliação
 Portal de Gestão de Avaliação para candidatos.
 
-Utilizar versão 1.9.3 do Ruby!
+Instalar/Utilizar versão 1.9.3 do Ruby!
 
-  Ir até o diretório do projeto
+    http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.9.3-p551.exe
+
+Baixar DevKit e extrair para uma pasta(pode ser a pasta que foi instalada o Ruby):
+
+    http://dl.bintray.com/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe
   
+Ir até o diretório do DevKit extraido e executar:
+  
+    ruby dk.rb init
+    
+    ruby dk.rb install
+    
+Ir até o diretório do projeto e executar:
+
     gem install bundler
     
     bundle install
